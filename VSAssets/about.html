@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>About</title>
+
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+    <link href="/translate.css" rel="stylesheet">
+    <script src="/translate.js"></script>
+</head>
+<body>
+    <div id="divGamePreferences" data-win-control="WinJS.UI.SettingsFlyout"
+                                 data-win-options="{settingsCommandId:'about', width:'narrow', onbeforeshow: langUtils.init}">
+
+        <div class="win-ui-dark win-header">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">About</div>
+
+                <div class="languagePrompt">
+                    <span class="native" onclick="langUtils.setUILanguage('english')">(in English)</span>
+                    <span class="english" onclick="langUtils.setUILanguage('native')">[[LOCALIZED LANGUAGE NAME]]</span>
+                </div>
+        </div>
+        <div class="win-content">
+            <div class="native">
+                [[LOCALIZED ABOUT TEXT]]
+            </div>
+
+            <div class="english">
+                <p>[[APP NAME]] aims to entertain and educate early-readers through a simple game where the hero collects items beginning with each letter of the alphabet.</p>
+                <p style="margin-top: 20px">Two game modes determine how the player is prompted (top left corner of the game screen), for instance:</p>
+                <ul style="margin-left: 20px; margin-top: 5px">
+                    <li>[[LOCALIZED TEXT]] (Words): <em>Find the Apple</em></li>
+                    <li>[[LOCALIZED TEXT]] (Letters): <em>What starts with A in [[LOCALIZED LANGUAGE ENGLISH NAME]]?</em></li>
+                </ul>
+                <p style="margin-top: 20px">Tap the prompt in the upper left corner to see the picture of the current object needed, then tap the picture to hide the hint.</p>
+                <p style="margin-top: 20px">Scoring is as follows:</p>
+                <ul style="margin-left: 20px; margin-top: 5px">
+                    <li>25 points for each object retrieved</li>
+                    <li>-1 point for each incorrect object touched</li>
+                    <li>-5 points each time current object appears and is not retrieved</li>
+                </ul>
+
+            </div>
+
+            <p style="margin-top: 30px">Copyright [[PUBLISHER NAME AND DATE]]/p>
+
+        </div>
+    </div>
+</body>
+</html>

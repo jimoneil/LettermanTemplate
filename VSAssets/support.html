@@ -1,0 +1,34 @@
+﻿<!doctype HTML>
+<html>
+<head>
+    <title>Support</title>
+
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+    <link href="/translate.css" rel="stylesheet">
+    <script src="/translate.js"></script>
+</head>
+<body>
+    <div id="divGamePreferences" data-win-control="WinJS.UI.SettingsFlyout"
+        data-win-options="{settingsCommandId:'support', width:'narrow', onbeforeshow : langUtils.init}">
+
+        <div class="win-ui-dark win-header">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label">Support</div>
+            <div class="languagePrompt">
+                <span class="native" onclick="langUtils.setUILanguage('english')">(in English)</span>
+                <span class="english" onclick="langUtils.setUILanguage('native')">[[LOCALIZED LANGUAGE NAME]]</span>
+            </div>
+        </div>
+
+        <div class="win-content">
+            <div class="native">
+                <p>[[LOCALIZED SUPPORT TEXT]]
+                </p>
+            </div>
+            <div class="english">
+                <p>[[SUPPORT TEXT]]</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
