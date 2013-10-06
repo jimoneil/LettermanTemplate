@@ -15,7 +15,7 @@ To localize the game to a new language ([German](http://apps.microsoft.com/windo
 
 1. **IMPORTANT:** If you import different background music, be sure to update the four references to **BackgroundMusic** within the **GameEvents** script BEFORE removing the Sound assets named **BackgroundMusic**.
 
-## After Exporting the Windows 8 project ##
+## After Exporting the Windows 8 project from Construct 2 ##
 1. Open the exported project in Visual Studio.
 
 
@@ -64,7 +64,7 @@ To localize the game to a new language ([German](http://apps.microsoft.com/windo
 		    <Resource Language="en-us" />
 		  </Resources> 
 
-	where the first language entry reflects the localization language you are using (e.g., French in the example above). Leave the second entry as **en-us**. This will enable you to provide a localized description and graphic assets in addition to and English description and assets when you submit the application to the Windows Store.
+	where the first language entry reflects the localization language you are using (e.g., French in the example above). Leave the second entry as **en-us**. This will enable you to provide a localized description and graphic assets in addition to an English description and assets when you submit the application to the Windows Store.
 
 1. Build the application in Visual Studio. You may receive errors referring to app manifest validation failures.  If so, double-click on **package.appxmanifest** in the Visual Studio project, navigate to the Packaging tab, and provide the missing data. 	
 
